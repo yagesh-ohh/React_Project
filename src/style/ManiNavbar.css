@@ -1,0 +1,279 @@
+/* html {
+    scroll-behavior: smooth;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100%;
+    height: 100%;
+  }
+.body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+} */
+.navlist{
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 0px 20px;
+    z-index: 999;
+}
+.listContainer{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    align-items: center;
+    padding-top: 10px;
+}
+.navlist img{
+    width: 150px;
+    padding-top: 7px;
+    padding-bottom: 0px;
+}
+.listContainer a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+.listContainer ul li{
+    display: flex;
+    align-items: center;
+    gap: 3px
+}
+input{
+    display: none;
+}
+/* .ancher:after{
+    position: relative;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    content: "\02C5";
+    font-size: 12px;
+    top: -1px;
+    right: -3px;
+    margin-top: -6px;
+} */
+.menuicon{
+    display: none;
+}
+
+
+.companyContainer{
+    width: 80%;
+}
+#companyHover:hover .innercompanyContainer{
+    opacity: 1 !important;
+    /* z-index: 999 !important; */
+}
+
+.hoverCompany{
+    position: absolute;
+    line-height: 1;
+    row-gap: 3rem;
+    width: 80%;
+    height: 400px;
+    left: 9rem;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    top: 5rem;
+    color: #f8f9fa;
+    background-color: #171425;
+    box-shadow: 2px 2px 15px rgba(0,0,0, 0.12);
+    /* opacity: 0; */
+    /* z-index: -1; */
+    display: none;
+    transition: 2s;
+}
+.innercompanyContainer ul li{
+    transition: 0.5s;
+}
+.innercompanyContainer ul li:hover::before{
+    position: relative;
+    content: ".";
+}
+.companyContainer:hover .hoverCompany{
+    display: block;
+}
+.companyContainer:hover{
+    padding: 20px auto;
+    border-top: 3px solid red;
+}
+.innercompanyContainer:hover .hoverCompany{
+    display: block;
+}
+.innercompanyContainer ul li:hover {
+    color: #e90000;
+    transform: translateX(20px);
+}
+
+
+
+.innercompanyContainer ul{
+    list-style: none;
+}
+.companyUpper ul li{
+    border-top: 2px solid #31323D;
+    padding: 5px 0px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.innercompanyContainer ul::-webkit-scrollbar{
+    width: 4px !important;
+    background: #39374e !important;
+    border-radius: 5px !important;
+    border: none !important;
+}
+.innercompanyContainer ul::-webkit-scrollbar-thumb{
+    background: #8d91a8 !important;
+}
+.innercompanyContainer ul:after{
+    display: block;
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}
+.innercompanyContainer h2{
+    text-transform: none;
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    border-right: none;
+    border-bottom: 1px solid transparent;
+    padding: 20px 0px 18px 0px;
+    margin: 0px 30px 0px 30px;
+    line-height: 1;
+    -webkit-text-stroke: 0px;
+    letter-spacing: 0px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+/* ------------------ */
+.forAlignh2{
+    position: relative;
+    left: -30px;
+}
+
+/* ---------------------- */
+
+
+.companyUpper{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.companyLower{
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.companyUpper .companyUpper_secondDiv .scroolingList{
+    height: 13rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+
+.companyLower{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3rem;
+}
+
+/* .navlist span */
+
+
+/* ----------------    All List Hover For Padding       -------------------------*/
+
+#companyHover,#SectorsHover,#IndexHover,#VerticalHover,#SpeakerHover,#AboutHover#BlogHover{
+    padding: 40px 0px;
+}
+
+
+
+/* ----------------    All List Hover For Padding  __END__     -------------------------*/
+
+
+.ancher{
+    padding: 0px 3px;
+  }
+
+
+.menubar{
+    display: none;
+}
+.x_symbole{
+    display: none;
+}
+.x_symboleblock{
+    display: block;
+}
+
+
+@media only screen and (max-width:868px) {
+    .listContainer{
+       
+     display: block;
+    background-color: #171425;
+    width: 100%;
+    position: fixed;
+    top: -24rem;
+    left: 0px;
+    z-index: -1;
+    line-height: 3;
+    transition: all .5s;
+    overflow: hidden;
+    }
+    .search{
+        display: none;
+    }
+      .menuicon{
+        display: block;
+    }
+    #companyHover,#SectorsHover,#IndexHover,#VerticalHover,#SpeakerHover,#AboutHover#BlogHover{
+        padding: 0px 0px;
+    }
+    .companyContainer:hover .hoverCompany {
+        
+        display: none;
+    }
+    .navlist span {
+        position: absolute;
+        right: 0px;
+          font-size: 12px;
+          right: -3px;
+          margin-top: -6px;
+          background-color: #1e1b2c;
+          width: 48px;
+          height: 49px;
+          text-align: center;
+          /* position: absolute; */
+          font-weight: bolder;
+      }
+      
+    
+
+    .listContainercontent{
+        top: 5rem;
+    }
+}
+

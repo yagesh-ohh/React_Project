@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+html,body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #272525;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+**::after,*::before{
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 4px !important;
+  background: #39374e !important;
+  border-radius: 5px !important;
+  border: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+#body_Component{
+  /* width: 90%; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #272525 !important;
+}
+
+
+
+
+.footer{
+  width: 100%;
+  max-width: 100%;
+  background-color: black;
+  height: auto;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: white !important;
+}
+
+
+/* span i{
+  display: none;
+  position: absolute;
+  right: .5rem;    
+
+}
+.navToggle{
+  display: block !important;
+}
+
+@media only screen and (max-width:620px) {
+
+  
+span i{
+  display: block;
+}
+nav .toggle{
+      display: none !important;
+      
+  }
+  nav ul li{
+      font-size: larger;
+  }
+  
+} */
+/* ------------------- */
+/* .row {
+  margin-top: 3rem;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+} */
+
+/* --------------------------------- */
+
+/* .video_content{
+  position: relative;
+  width: 100%;
+  height: 560px
+} */
+
+
+
+/* ----------------------------------- */
+/* 
+.Blog{
+  overflow: hidden;
+  margin-top: 2rem;
+} */
+
+/* ---------------------------------------------- */
+
+/* 
+.logoSlider{
+  height: 200px;
+  background-color: #272525 !important;
+
+} */
+
+
+/* -------------------------------------------------------------- */
+
+
+/* .presentation{
+  height: 200px;
+  background-color: #272525 !important;
+} */
+
+
+
+/* --------------------------- */
+
+/* 
+.Footer{
+  width: 100%;
+  background-color: black;
+  height: auto;
+}
+.Footer p{
+  color: white;
+}
+.Footer ul li{
+  color: white;
+} */
+
+
+/* ------------------------------------------------ */
+
+
+/* 
+.discover-inves{
+  position: relative;
+  margin: 3rem 0px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} */
+
+
+/* ----------------------------------------------------- */
+
+
+
+
+
+
+
+/* .SectorsMainButton{
+  margin-top: 5rem;
+} */
+
+
+/*
+
+.ProfilesContainer{
+   width: 100%;
+  height: 300px;
+  /* background-color: aquamarine; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+*/
+
+@media only screen and (max-width:920px){
+  .ProfilesContainer{
+    height: 500px;
+    overflow: hidden;
+  }
+}
+
+
+.card:hover{
+  border: 1px solid #FD2120 !important;
+}
+
+.card-body{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-img-top{
+  padding: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

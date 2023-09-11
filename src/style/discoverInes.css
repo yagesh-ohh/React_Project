@@ -1,0 +1,35 @@
+.pro_details{
+    position: relative;
+    top: -3rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.content_details{
+     
+    width: 100%;
+    padding: 30px 20px 30px 20px;
+    /* background: url(https://seat11a.com/wp-content/uploads/2023/02/red-gradient-border.svg); */
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+.content_details p {
+    background-color: #272626;
+    
+}
+
+
+@media only screen and (max-width : 860px) {
+
+    .pro_details{
+        width: 100%;
+    }
+    .content_details p{
+       width: 100%;
+       font-size: 80%;
+    }   
+   }
